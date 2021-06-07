@@ -1,0 +1,109 @@
+<!DOSCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function ashu(form){
+            let username = form.Name.value;
+            let useremail = form.Email.value;
+            let usernumber = form.Number.value;
+    
+            let dbname = "Ashutosh Nakum";
+            let dbemail = "nakumashutosh18@gmail.com";
+            let dbnumber = "9328168550";
+    
+            let fog = document.getElementById("CONTACT");
+            console.log(fog);
+    
+            if((username==dbname && useremail==dbemail) || (useremail==dbemail && usernumber==dbnumber)){
+                document.getElementById("CONTACT").innerHTML="<b style= color:blue> submit </b>";
+            }
+            else{
+                document.getElementById("CONTACT").innerHTML="<b style=color:red> error </b>";
+            }
+        }
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ashu.css">
+    <title>GO TO LADAKH</title>
+</head>
+<body>
+    <nav class="navbar background h-nav">
+        <ul class="nav-list v-nav">
+            <img src="1502878472.jpg" class="bn" alt="logo">
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="Attraction.html">ATTRACTION</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#CONTACT">CONTACT</a></li>
+        </ul>
+     <div class="rightnav v-nav">
+         <input type="text" name="search" id="search">
+         <button class="btn btn-sm">search</button>
+     </div>
+
+     <div class="burger">
+         <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+     </div>
+     </nav>
+     <section class="background boom" id="HOME">
+         <div>
+             <p class="nakum">|LADAKH TRIP</p>
+         </div>
+     </section> 
+     <div class="lol" id="ABOUT">
+         <div class="para">
+         <h3>Monestry of Leh Ladakh</h3>
+         <p class="soon">Between the 1380s and early 1510s, many Islamic missionaries propagated Islam and proselytised the Ladakhi people. Sayyid Ali Hamadani, Sayyid Muhammad Nur Baksh and Mir Shamsuddin Iraqi were three important Sufi missionaries who propagated Islam to the locals. Mir Sayyid Ali was the first one to make Muslim converts in Ladakh and is often described as the founder of Islam in Ladakh. Several mosques were built in Ladakh during this period, including in Mulbhe, Padum and Shey, the capital of Ladakh.His principal disciple, Sayyid Muhammad Nur Baksh also propagated Islam to Ladakhis and the Balti people rapidly converted to Islam. </p>
+        </div>
+         <img src="https://source.unsplash.com/1600x900/?ladakh" alt="ladakh" class="src">
+     </div>
+
+     <div class="lol lol-rev">
+         <div class="para">
+        <h3>Hemi Monestry in Ladakh</h3>
+        <p class="soon">The Siachen Glacier is in the eastern Karakoram Range in the Himalaya Mountains along the disputed India-Pakistan border. The Karakoram Range forms a great watershed that separates China from the Indian subcontinent and is sometimes called the "Third Pole." The glacier lies between the Saltoro Ridge immediately to the west and the main Karakoram Range to the east. At 76 km (47 mi) long, it is the longest glacier in the Karakoram and second-longest in the world's non-polar areas.</p>
+       </div>
+            <img src="https://source.unsplash.com/1600x900/?ladakh,nature" alt="ladakh" class="src">
+    </div>
+
+    <div class="lol">
+        <div class="para">
+        <h3>Leh</h3>
+        <p class="soon">Between the 1380s and early 1510s, many Islamic missionaries propagated Islam and proselytised the Ladakhi people. Sayyid Ali Hamadani, Sayyid Muhammad Nur Baksh and Mir Shamsuddin Iraqi were three important Sufi missionaries who propagated Islam to the locals. Mir Sayyid Ali was the first one to make Muslim converts in Ladakh and is often described as the founder of Islam in Ladakh. Several mosques were built in Ladakh during this period, including in Mulbhe, Padum and Shey, the capital of Ladakh.His principal disciple, Sayyid Muhammad Nur Baksh also propagated Islam to Ladakhis and the Balti people rapidly converted to Islam. </p>
+       </div>
+        <img src="https://source.unsplash.com/1600x900/?ladakh sky" alt="ladakh" class="src">
+    </div>
+    <form action="/" >
+    <div class="form"id="CONTACT" >
+        <br>
+        <h3>CONTACT</h3>
+        <br>
+        <div class="baby">
+        <input type="text" name="Name" placeholder="Enter your name">
+        <input type="email" name="Email" placeholder="Enter your email">
+        <input type="text" name="Number" placeholder=" +91  Enter your number">
+        <br>
+        <br>
+        <center><button class="btn" onclick="ashu(this.form) ; return false;">Submit</button></center>
+        </div>
+    </div>
+     <div>  
+     </div>
+</form>
+    <script>
+        let burger = document.querySelector(".burger");
+        let navbar = document.querySelector(".navbar");
+        let navList = document.querySelector(".nav-list");
+        let rightNav = document.querySelector(".rightnav");
+        burger.addEventListener('click',()=>{
+            navbar.classList.toggle('h-nav');
+            navList.classList.toggle('v-nav');
+            rightNav.classList.toggle('v-nav');
+        })
+    </script>
+</body>
+</html>

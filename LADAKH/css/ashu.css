@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+    
+
+.bn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+    
+.rightnav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+    /* text-align: right; */
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    background:rgba(0, 0, 0, 0.8) url('ashu1.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+}
+.nav-list{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    
+}
+.nav-list li{
+   list-style: none;
+   padding: 18px 20px;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    color:white; 
+    font-weight: 500;
+    
+}
+.nav-list li a:hover{
+    color:black;
+}
+#search{
+    padding: 5px;
+    font-size:17px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin:2px 5px;
+}
+.background{
+    /* height: 100vh; */
+    background:rgba(0, 0, 0,0.5) url('ashu.jpg');
+    background-blend-mode:darken;
+    background-size: cover;
+    
+    
+}
+.boom{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.nakum{
+    font-size: 60px;
+    color: white;
+    margin-left: 20px;
+    
+}
+.lol img{
+    height: 160px;
+    width: 180px;
+   border: 2px solid black;
+    border-radius: 10px;
+    /* margin: 0 10px; */
+
+}
+.lol{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.soon{
+    font-size: 17px;
+    max-width: 800px;
+
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 20px;
+}
+.para h3{
+    margin: 8px 0;
+
+}
+
+.lol-rev{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-image:  linear-gradient(to right,#9a243e 0,#43264e 72%);
+    margin-top: 20px ;
+    font-size: 25px;
+    font-family: "Lato Regular";
+    position: relative;
+}
+.form input{
+    font-size: 18px;
+    padding: 5px; 
+    margin: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: underline;
+}
+
+::placeholder{
+    color: white;
+}
+h3{
+    color: white;
+    justify-content: start;
+}
+
+.btn{
+    height: 25px;
+    width: 80px;
+    background: cadetblue;;
+
+}
+
+.btn-sm{
+    color: white;
+    border: white 1px solid;
+    border-radius:5px;
+    margin: 0 10px;
+}
+
+.burger{
+    position: absolute;
+    right: 5px;
+    top: 3%;
+    display: none;
+    /* height: 50px;
+    width: 50px; */
+    /* display: ; */
+    /* border: 1px solid black; */
+}
+.line{
+    width: 40px;
+    height: 4px;
+    color: black;
+    margin: 5px;
+    background-color: white;
+
+}
+
+@media only screen and (max-width: 910px)
+{
+   .nav-list{
+       flex-direction: column;
+   } 
+   .rightnav{
+    flex-direction: column;
+    /* width: 50%; */
+    justify-content: center;
+   }
+   .navbar{
+    flex-direction: column;
+   }
+   .burger{
+    display: block;
+   }
+   .h-nav{
+        height: 45px;
+   }
+   .v-nav{
+       visibility: hidden;
+   }
+}
+
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    /* height: 30vh; */
+
+}
+
+.card{
+    display: flex;
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid black */
+    margin-top: 25px;
+}
+.card img{
+    height: 190px;
+    width: 25%;
+    border: 2px solid black;
+    
+}
+.des{
+    width: 50%;
+    border-right: 2px solid black;
+    margin-right: 1%;
+}
+
+.des h3{
+    margin-left:30px ;
+    margin-top: 5px;
+}
+
+.price{
+    width: 25%;
+    background-color:darkcyan;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.rating{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.soon{
+    
+    margin: 27px;
+}
+
+.gum{
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    
+}
+
+.broken{
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.chuchu{
+    
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+    margin: 15px 20px;
+}
+
+.erangle{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.war{
+     margin-top: 18px; 
+    text-align: center;
+    font-size: 14px;
+
+}
+
+
+
+.war1{
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+.fook{
+    background-color: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
